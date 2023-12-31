@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size:  max(1300px, 100vw);
+    height: 80vh;
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.64;
+    position: absolute;
+    top: 0;
+    background-color: black;
+} 
+nav {
+    max-width: 80vw;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    color: red;
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+nav .navbtns{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 10;
+}
+.maincontent{
+    font-family: 'Poppins', sans-serif;
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    color: white;
+    position: relative;
+    gap: 20px;
+    padding: 0 25px;
+    text-align: center;
+}
+.maincontent> :nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    max-width: 80vw;
+}
+.maincontent> :nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 80vw;
+}
+.maincontent> :nth-child(3){
+    font-weight: 300;
+    font-size: 20px;
+    max-width: 80vw;
+}
+.separation{
+    height: 8px;
+    background-color: rgb(57, 56, 56);
+}
+
+.btn{
+    font-weight: 400;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 4px;
+    padding: 3.5px 14.5px;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 20px;
+    
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 14.5px;
+    
+}
+.maincontent-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.maincontent-btns ::placeholder{
+    position: relative;
+    color: rgba(255, 255, 255, 0.795);
+    opacity: 1;
+}
+
+.main input{
+    border-radius: 5px;
+    padding: 15px 10px 15px 13px;  
+    width: 260px;  
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: rgba(23,23,23,0.7);
+    border: 0.8px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+.secondImg{
+    position: relative;
+}
+.secondImg img{
+    width: 500px;
+    position: relative;
+    z-index: 10;
+}
+.secondImg video{
+    position: absolute;
+    top: -76px;
+    width: 399px;
+    right: 35px;
+    height: 600px;
+}
+
+section.first>div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.first>div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first>div :nth-child(2){
+    font-size: 28px;
+}
+.thirdImg{
+    position: relative;
+}
+.thirdImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.thirdImg video{
+    position: absolute;
+    top: -100px;
+    width: 250px;
+    height: 480px;
+    right: 70px;
+}
+.faq{
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    font-size: 20px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faqbox:hover{
+    background-color: rgb(68, 67, 67);  
+}
+
+.faqbox{
+    transition: all 0.3s ease-out;
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 25px;
+    max-width: 60vw;
+    margin: 14px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer{
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    padding: 30px;
+}
+.questions{
+    padding-bottom: 20px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+@media screen and (max-width: 900px){
+   
+    nav .navbtns button{
+        display: flex;
+        gap: 10px;
+    }
+    .maincontent{
+        height: calc(100% - 80px);
+    }
+    .maincontent>:nth-child(1){
+        font-size: 30px;
+    }
+    .maincontent> :nth-child(2) {
+        font-size: 18px;
+    }
+    .maincontent> :nth-child(2) {
+        font-size: 17px;
+    }
+    .maincontent-btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+   
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+    }
+    .secondImg img{
+        width: 378px;
+    }
+    .secondImg video {
+        top: -123px;
+        width: 294px;    
+        right: 35px;
+        height: 600px;
+    }
+    .thirdImg img {
+        width: 355px;
+        z-index: 10;
+    }
+    .thirdImg video {
+        top: -67px;
+        width: 220px;
+        height: 387px;
+        right: 78px;
+    }
+    .faq h2 {
+        font-size: 32px;
+    }
+    .faq div{
+        padding: 15px;
+        font-size: 18px;
+        max-width: 85%;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        gap: 50px;
+    }
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer a{
+    font-size: 14px;
+    color: white;
+}
