@@ -1,2 +1,2 @@
 # Netflix-Clone
-site is live at https://eshwarnamala.github.io/clone1/
+site is live at https://eshwarnamala.github.io/Netflix/
